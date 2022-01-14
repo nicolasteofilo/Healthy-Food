@@ -4,6 +4,7 @@ import { BannerHome } from '../../components/BannerHome';
 import { BannerTwo } from '../../components/BannerTwo';
 import { BestRecipes } from '../../components/BestRecipes';
 import { BlogSection } from '../../components/BlogSection';
+import Footer from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { Container } from './styles';
 
@@ -16,6 +17,7 @@ function HomePage() {
             <BannerTwo />
             <BlogSection />
             <BannerFooter />
+            <Footer />
         </Container>
     );
 }

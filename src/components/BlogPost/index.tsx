@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ContainerTextAndButton, Footer } from './styles';
+import { Container, Footer } from './styles';
 
 interface RecipeItemProps {
     name: string;
