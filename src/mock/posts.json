@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Quick-start guide to nuts and seeds",
+    "imgUrl": "/images/bloco_image_1.svg",
+    "author": "Kevin Ibrahim",
+    "authotImgUrl": "https://st.depositphotos.com/1224365/2408/i/600/depositphotos_24084437-stock-photo-portrait-of-a-normal-boy.jpg"
+  },
+  {
+    "id": "2",
+    "name": "Nutrition: tips for Improving Your Health",
+    "imgUrl": "/images/bloco_image_2.svg",
+    "author": "Mike Jackson",
+    "authotImgUrl": "https://st.depositphotos.com/1224365/2498/i/600/depositphotos_24980077-stock-photo-portrait-of-a-normal-man.jpg"
+  },
+  {
+    "id": "3",
+    "name": "The top 10 bevefits of eating healthy",
+    "imgUrl": "/images/bloco_image_3.svg",
+    "author": "Ane McGregor",
+    "authotImgUrl": "https://media.semprefamilia.com.br/semprefamilia/2019/10/capa-mentalmente-fortes-4d44b41a.png"
+  },
+  {
+    "id": "4",
+    "name": "What to eat when you're feeling sick",
+    "imgUrl": "/images/bloco_image_4.svg",
+    "author": "Jackie Jackson",
+    "authotImgUrl": "https://cdn.vezdavoz.com.br/wp-content/uploads/2019/06/Isaac.jpg"
+  }
+]
