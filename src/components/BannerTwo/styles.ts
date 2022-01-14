@@ -4,10 +4,11 @@ export const Container = styled.div`
   display: flex;
   width: 100vw;
   align-items: center;
+  margin-top: 3rem;
   img {
     width: 50%;
     height: 50%;
-    margin-left: auto;
+    /* margin-left: auto; */
   }
 
   @media (max-width: 768px) {
@@ -22,14 +23,31 @@ export const TextandInputContainer = styled.div`
   h1 {
     color: #1d164d;
   }
-  input {
-    width: 120%;
-    height: 3rem;
+  p {
+    color: #cccccc;
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+  button {
+    color: #ffff;
+    background: transparent;
     border: 0;
+    background: #badc58;
     border-radius: 4px;
-    padding: 0 1rem;
-    margin-top: 2rem;
-    border: 1px solid #1d164d;
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+
+    @media (max-width: 768px) {
+      font-size: 1rem;
+    }
+    @media (max-width: 425px) {
+      font-size: 0.8rem;
+    }
+    @media (max-width: 375px) {
+      font-size: 0.7rem;
+    }
   }
 
   @media (max-width: 768px) {

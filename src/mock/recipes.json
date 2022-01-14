@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "name": "Broccoli Salad with Bacon",
+    "imgUrl": "/images/comida_1.svg"
+  },
+  {
+    "id": "2",
+    "name": "Classic Beef Burgers",
+    "imgUrl": "/images/comida_2.svg"
+  },
+  {
+    "id": "3",
+    "name": "Classic Potato Salad",
+    "imgUrl": "/images/comida_3.svg"
+  },
+  {
+    "id": "4",
+    "name": "Cherry Cobbler on the Grill",
+    "imgUrl": "/images/comida_4.svg"
+  }
+]

@@ -1,18 +1,19 @@
 import React from 'react';
-import { Container } from './styles';
+import { Container, ContainerTextAndButton } from './styles';
 
 interface RecipeItemProps {
     name: string;
     imgUrl: string;
 }
 
-function RecipeItem({ name, imgUrl }: RecipeItemProps) {
+export function RecipeItem({ name, imgUrl }: RecipeItemProps) {
     return (
         <Container>
-            <h1>{name}</h1>
             <img src={imgUrl} alt={name} />
+            <ContainerTextAndButton>
+                <h1>{name}</h1>
+                <button type="button">See Recipe</button>
+            </ContainerTextAndButton>
         </Container>
     );
 }
-
-export default RecipeItem;
