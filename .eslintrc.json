@@ -1,0 +1,71 @@
+{
+  "env": {
+      "browser": true,
+      "es2021": true
+  },
+  "extends": [
+      "plugin:react/recommended",
+      "airbnb",
+      "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+      "ecmaFeatures": {
+          "jsx": true
+      },
+      "ecmaVersion": 12,
+      "sourceType": "module"
+  },
+  "plugins": [
+      "react",
+      "react-hooks",
+      "@typescript-eslint"
+  ],
+  "rules": {
+      "react/jsx-no-bind": ["off"],
+      "linebreak-style": 0,
+      "react/jsx-filename-extension": [
+          1,
+          {
+              "extensions": [
+                  ".tsx"
+              ]
+          }
+      ],
+      "no-use-before-define": "off",
+      "react/react-in-jsx-scope" : "off",
+      "import/extensions": "off",
+      "import/no-unresolved": "off",
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-use-before-define": [
+          "error"
+      ],
+      "@typescript-eslint/no-explicit-any": [
+          "off"
+      ],
+      "indent": [
+          "error",
+          4
+      ],
+      "react/jsx-indent": [
+          "error",
+          4
+      ],
+      "react/jsx-indent-props": [
+          "error",
+          4
+      ],
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies": [
+          "error",
+          {
+              "devDependencies": true
+          }
+      ]
+  },
+  "settings": {
+      "import/resolver": {
+          "typescript": {}
+      }
+  }
+}
