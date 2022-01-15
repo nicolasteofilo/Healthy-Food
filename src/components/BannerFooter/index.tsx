@@ -5,7 +5,7 @@ export function BannerFooter() {
     return (
         <Container>
             <TextandInputContainer>
-                <h1>Join our membership to get special offer</h1>
+                <h1 id="join">Join our membership to get special offer</h1>
                 <div>
                     <input type="text" placeholder="Enter your email address" />
                     <button type="button">Join</button>

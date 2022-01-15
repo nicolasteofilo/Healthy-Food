@@ -25,25 +25,69 @@ export const Container = styled.div`
       font-size: 1.2rem;
     }
   }
+`;
 
-  button {
-    color: #badc58;
-    background: transparent;
-    border: 0;
-    border-radius: 4px;
-    font-size: 0.5rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.5rem 1rem;
+export const Nav = styled.nav`
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 5;
 
-    @media (max-width: 768px) {
-      font-size: 1rem;
+  #basic-button {
+    @media (min-width: 768px) {
+      display: none;
     }
-    @media (max-width: 425px) {
-      font-size: 0.8rem;
-    }
-    @media (max-width: 375px) {
-      font-size: 0.7rem;
-    }
+  }
+`;
+
+export const ButtonRegister = styled.button`
+  background: #fff;
+  color: #badc58;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 0.7rem;
+  }
+`;
+
+export const NormalButtonNav = styled.button`
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 2;
+  height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    display: none;
+    font-size: 1rem;
+  }
+  @media (max-width: 425px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 375px) {
+    font-size: 0.7rem;
   }
 `;

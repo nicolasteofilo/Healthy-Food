@@ -6,7 +6,7 @@ export function BlogSection() {
     return (
         <Container>
             <Header>
-                <h1>Read Our Blog</h1>
+                <h1 id="blog">Read Our Blog</h1>
                 <p className="fist">Far far away, beheind the word mountains, far from the</p>
                 <p className="second">countries Vokalia and Consonantia, there live the blind</p>
             </Header>

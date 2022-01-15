@@ -13,6 +13,11 @@ const globalStyle = createGlobalStyle`
         max-width: 100%;
         overflow-x: hidden;
     }
+
+    CSS
+    html {
+    scroll-behavior: smooth;    
+    }
     body, input, button {
         font-family: Montserrat, sans-serif;
     }

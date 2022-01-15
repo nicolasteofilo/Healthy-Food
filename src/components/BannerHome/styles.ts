@@ -5,9 +5,12 @@ export const Container = styled.div`
   width: 100vw;
   align-items: center;
   img {
+    position: relative;
     width: 50%;
     height: 50%;
     margin-left: auto;
+    margin-top: -4rem;
+    z-index: 0;
   }
 
   @media (max-width: 768px) {

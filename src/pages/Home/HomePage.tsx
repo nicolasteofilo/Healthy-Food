@@ -8,7 +8,7 @@ import Footer from '../../components/Footer';
 import { Header } from '../../components/Header';
 import { Container } from './styles';
 
-function HomePage() {
+export function HomePage() {
     return (
         <Container>
             <Header />
@@ -21,5 +21,3 @@ function HomePage() {
         </Container>
     );
 }
-
-export default HomePage;

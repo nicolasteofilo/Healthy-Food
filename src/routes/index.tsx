@@ -1,12 +1,12 @@
 import { Switch, Route } from 'react-router-dom';
 
-import LoginPage from '../pages/Login/LoginPage';
-import HomePage from '../pages/Home/HomePage';
+import { RegisterPage } from '../pages/Register/RegisterPage';
+import { HomePage } from '../pages/Home/HomePage';
 
 const Routes: React.FC = () => (
     <Switch>
-        <Route path="/" exact component={LoginPage} />
-        <Route path="/home" component={HomePage} />
+        <Route path="/" exact component={HomePage} />
+        <Route path="/register" component={RegisterPage} />
     </Switch>
 );
 
