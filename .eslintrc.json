@@ -37,6 +37,7 @@
       "import/extensions": "off",
       "import/no-unresolved": "off",
       "@typescript-eslint/explicit-module-boundary-types": "off",
+      "react/jsx-props-no-spreading": "off",
       "@typescript-eslint/no-use-before-define": [
           "error"
       ],
