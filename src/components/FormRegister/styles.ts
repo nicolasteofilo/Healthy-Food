@@ -72,6 +72,7 @@ export const Input = styled.input<BorderError>`
   border-color: ${(props) => (props.error ? '#e78483' : '#a8dc81')};
   border-radius: 4px;
   height: 44px;
+  width: 100%;
   margin-bottom: 10px;
   padding-left: 10px;
 `;

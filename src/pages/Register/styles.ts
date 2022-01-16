@@ -12,7 +12,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     img { 
-      width: 90%;
+      width: 80%;
     }
   }
 `;
