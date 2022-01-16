@@ -15,7 +15,7 @@ Link to demo: https://grupo-gcb-teste.vercel.app/
 
 ## Screenshots
 
-![App Screenshot]('.github/screenshots/SingUp.png')
+![App Screenshot]('/.github/screenshots/SingUp.png')
 
 ## Installation
 
