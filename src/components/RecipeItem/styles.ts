@@ -36,6 +36,7 @@ export const ContainerTextAndButton = styled.div`
         background: #badc58;
         color: #FFF;
         justify-content: flex-start;
+        cursor: pointer;
     }
 
     @media (max-width: 768px) {

@@ -13,6 +13,7 @@ export const Container = styled.div`
   h1 {
     color: #badc58;
     font-size: 2rem;
+    cursor: pointer;
   }
 
   @media (max-width: 768px) {

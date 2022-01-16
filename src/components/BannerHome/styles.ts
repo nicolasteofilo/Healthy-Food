@@ -25,6 +25,19 @@ export const TextandInputContainer = styled.div`
   h1 {
     color: #1d164d;
   }
+  div {
+    display: flex;
+
+    button {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      padding: 0 1rem;
+      background: #badc58;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
   input {
     width: 120%;
     height: 3rem;

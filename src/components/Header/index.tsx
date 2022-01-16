@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
@@ -5,7 +7,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { useState } from 'react';
 import { FiMenu } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 import {
     ButtonRegister, Container, Nav, NormalButtonNav,
@@ -13,6 +15,7 @@ import {
 
 export function Header() {
     const router = useHistory();
+    const locationRouter = useLocation();
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
@@ -37,9 +40,13 @@ export function Header() {
         });
     }
 
+    function toHome() {
+        router.push('/');
+    }
+
     return (
         <Container>
-            <h1>Healthy Food</h1>
+            <h1 onClick={() => toHome()}>Healthy Food</h1>
             <Nav>
                 <div>
                     <NormalButtonNav onClick={() => scrollToTop('recipes')}>
@@ -59,38 +66,44 @@ export function Header() {
                     >
                         REGISTER
                     </ButtonRegister>
-                    <Button
-                        id="basic-button"
-                        aria-controls={open ? 'basic-menu' : undefined}
-                        aria-haspopup="true"
-                        aria-expanded={open ? 'true' : undefined}
-                        onClick={handleClick}
-                    >
-                        {open ? (
-                            <AiOutlineClose color="#badc58" size={18} />
-                        ) : (
-                            <FiMenu color="#badc58" size={18} />
-                        )}
-                    </Button>
-                    <Menu
-                        id="basic-menu"
-                        anchorEl={anchorEl}
-                        open={open}
-                        onClose={handleClose}
-                        MenuListProps={{
-                            'aria-labelledby': 'basic-button',
-                        }}
-                    >
-                        <MenuItem onClick={() => scrollToTopAndCloseMenuBurguer('join')}>
-                            JOIN
-                        </MenuItem>
-                        <MenuItem onClick={() => scrollToTopAndCloseMenuBurguer('blog')}>
-                            BLOG
-                        </MenuItem>
-                        <MenuItem onClick={() => scrollToTopAndCloseMenuBurguer('recipes')}>
-                            HEALTHY RECIPES
-                        </MenuItem>
-                    </Menu>
+                    {locationRouter.pathname !== '/' ? null : (
+                        <>
+                            <Button
+                                id="basic-button"
+                                aria-controls={open ? 'basic-menu' : undefined}
+                                aria-haspopup="true"
+                                aria-expanded={open ? 'true' : undefined}
+                                onClick={handleClick}
+                            >
+                                {open ? (
+                                    <AiOutlineClose color="#badc58" size={18} />
+                                ) : (
+                                    <FiMenu color="#badc58" size={18} />
+                                )}
+                            </Button>
+                            <Menu
+                                id="basic-menu"
+                                anchorEl={anchorEl}
+                                open={open}
+                                onClose={handleClose}
+                                MenuListProps={{
+                                    'aria-labelledby': 'basic-button',
+                                }}
+                            >
+                                <MenuItem onClick={() => scrollToTopAndCloseMenuBurguer('join')}>
+                                    JOIN
+                                </MenuItem>
+                                <MenuItem onClick={() => scrollToTopAndCloseMenuBurguer('blog')}>
+                                    BLOG
+                                </MenuItem>
+                                <MenuItem
+                                    onClick={() => scrollToTopAndCloseMenuBurguer('recipes')}
+                                >
+                                    HEALTHY RECIPES
+                                </MenuItem>
+                            </Menu>
+                        </>
+                    )}
                 </div>
             </Nav>
         </Container>

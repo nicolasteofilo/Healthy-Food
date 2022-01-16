@@ -13,7 +13,12 @@ export function BestRecipes() {
             </Header>
             <GridRecipes>
                 {RecipesMock.map((recipe) => (
-                    <RecipeItem key={recipe.id} name={recipe.name} imgUrl={recipe.imgUrl} />
+                    <RecipeItem
+                        key={recipe.id}
+                        name={recipe.name}
+                        imgUrl={recipe.imgUrl}
+                        path={recipe.path}
+                    />
                 ))}
             </GridRecipes>
         </Container>
