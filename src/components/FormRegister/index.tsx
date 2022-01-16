@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 import { useEffect, useState } from 'react';
 import { consultarCep } from 'correios-brasil';
+import Cookies from 'universal-cookie';
 
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -80,9 +81,12 @@ function FormRegister() {
     }, [cep]);
 
     const handleCreateUser: SubmitHandler<CreateUserFormData> = async (values) => {
+        const cookies = new Cookies();
         setLoading(true);
         await new Promise((resolve) => setTimeout(resolve, 1000)).then(() => {
             setLoading(false);
+            localStorage.setItem('user', JSON.stringify(values));
+            cookies.set('user', JSON.stringify(values), { path: '/' });
             router.push('/');
         });
     };
