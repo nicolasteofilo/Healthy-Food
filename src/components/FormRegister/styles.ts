@@ -14,6 +14,10 @@ export const CardRegister = styled.div`
     span {
       color: #a8dc81;
     }
+
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+    }
   }
   form {
     display: flex;
@@ -39,6 +43,18 @@ export const CardRegister = styled.div`
       cursor: pointer;
       color: #fff;
       font-weight: 700;
+    }
+
+    transition: filter 0.2s;
+
+    button[type='submit']:hover {
+      filter: brightness(90%);
+    }
+
+    @media (max-width: 768px) {
+      div {
+        flex-direction: column;
+      }
     }
   }
 `;
