@@ -1,7 +1,5 @@
 # Healthy Food
 
-Aplicação desenvolvida ao longo do teste técnico da empresa [GCB investimentos](https://gcbinvestimentos.com/)
-
 ## Tech Stack
 
 - ReactJS
@@ -22,10 +20,10 @@ Link to demo: https://grupo-gcb-teste.vercel.app/
 
 ## Installation
 
-Install grupo-gcb-teste with SSH
+Install Healthy Food with SSH
 
 ```bash
-  git clone git@github.com:nicolasteofilo/grupo-gcb-teste.git
+  git clone git@github.com:nicolasteofilo/Healthy-Food.git
   cd grupo-gcb-teste
   yarn
   yarn start
